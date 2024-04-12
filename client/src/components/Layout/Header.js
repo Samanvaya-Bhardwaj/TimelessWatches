@@ -34,7 +34,7 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link to="/" className="navbar-brand">
-              🛒 Ecommerce App
+              Timeless<span className="text-red">Watches</span>
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <SearchInput />
@@ -103,8 +103,8 @@ const Header = () => {
               <li className="nav-item">
                 <Badge count={cart?.length} showZero>
                   <NavLink to="/cart" className="nav-link">
-                    <GiShoppingBag /> 
-                  </NavLink> 
+                    <GiShoppingBag />
+                  </NavLink>
                 </Badge>
               </li>
             </ul>

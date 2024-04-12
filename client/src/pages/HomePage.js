@@ -70,23 +70,9 @@ const HomePage = () => {
     }
   };
 
-  // const handleFilter = (value, id) => {
-  //   let all = [...checked];
-  //   if (value) {
-  //     all.push(id);
-  //   } else {
-  //     all = all.filter((c) => c !== id);
-  //   }
-  //   setChecked(all);
-  // };
-
-  // // Filter products based on selected categories
-  // const filteredProducts = products.filter((product) =>
-  //   checked.length === 0 ? true : checked.includes(product.categoryId)
-  // );
 
   return (
-    <Layout title={"Home - Ecommerce"}>
+    <Layout title={"Home - TimelessWatches"}>
       <div
         id="carouselExampleAutoplaying"
         className="carousel slide"
@@ -154,21 +140,27 @@ const HomePage = () => {
 
       <div className="row">
         <div className="row-md-3">
-          <h4 className="text-center my-3">Filter By Category</h4>
+          <h4 className="text-center my-3 mb-5">Our Categories</h4>
           <div className="d-flex justify-content-around">
             {categories?.map((c) => (
-              <Checkbox
+              <div
                 key={c._id}
-                onChange={(e) => handleFilter(e.target.checked, c._id)}
+                style={{
+                  display: "inline-block",
+                  padding: "15px 20px",
+                  borderRadius: "20px",
+                  color: "#444444",
+                  backgroundColor: "#FFA5B8",
+                  margin: "5px",
+                  fontWeight: "bold"
+                }}
               >
                 {c.name}
-              </Checkbox>
+              </div>
             ))}
           </div>
         </div>
       </div>
-
-      {JSON.stringify(checked, null, 4)}
 
       <div className="container">
         <h1 className="text-center mt-5">All Products</h1>

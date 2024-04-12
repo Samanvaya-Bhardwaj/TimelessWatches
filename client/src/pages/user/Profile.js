@@ -50,7 +50,7 @@ const Profile = () => {
     }
   };
   return (
-    <Layout title={"Your Profile"}>
+    <Layout title={"Your Profile - TimelessWatches"}>
       <div className="container-fluid m-3 p-3">
         <div className="row">
           <div className="col-md-3">

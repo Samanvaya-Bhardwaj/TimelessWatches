@@ -3,8 +3,9 @@ import Layout from "../components/Layout/Layout";
 import axios from "axios";
 import { Checkbox, Radio } from "antd";
 import { useNavigate } from "react-router-dom";
-
+import { useCart } from "../context/Cart";
 import { Prices } from "../components/Prices";
+import toast from "react-hot-toast";
 
 const Category = () => {
   const [products, setProducts] = useState([]);
@@ -14,6 +15,7 @@ const Category = () => {
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
+  const [cart, setCart] = useCart();
   
   const navigate = useNavigate();
 
@@ -108,7 +110,7 @@ const Category = () => {
   };
 
   return (
-    <Layout title={"Home - Ecommerce"}>
+    <Layout title={"Categories - TimelessWatches"}>
       <div className="row">
         <div className="col-md-3">
           <h6 className="text-center mt-2">Filter By Category</h6>
@@ -168,7 +170,17 @@ const Category = () => {
                   >
                     More Details
                   </button>
-                  <button className="btn cart btn-primary mx-1">
+                  <button
+                    className="btn btn-primary cart ms-1"
+                    onClick={() => {
+                      setCart([...cart, p]);
+                      localStorage.setItem(
+                        "cart",
+                        JSON.stringify([...cart, p])
+                      );
+                      toast.success("Item Added to cart");
+                    }}
+                  >
                     Add to Cart
                   </button>
                 </div>

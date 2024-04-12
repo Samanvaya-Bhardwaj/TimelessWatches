@@ -60,7 +60,7 @@ function App() {
 
         <Route path="/cart" element={<CartPage />} />
 
-        <Route path="/policy" element={<Policy />} />
+        <Route path="/faq" element={<Policy />} />
         <Route path="/*" element={<Pagenotfound />} />
       </Routes>
     </>
