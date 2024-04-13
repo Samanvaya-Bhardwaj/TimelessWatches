@@ -3,7 +3,7 @@ import Layout from "./../components/Layout/Layout";
 
 const Policy = () => {
   return (
-    <Layout title={"Frequently Asked Questions - TimelessWatches"}>
+    <Layout title={"Frequently Asked Questions - Omnitrix"}>
       <div className="container faq-container">
         <h2 className="text-center faq-title mb-4 mt-5">
           Frequently Asked Questions

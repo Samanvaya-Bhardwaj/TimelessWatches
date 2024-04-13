@@ -82,7 +82,7 @@ const CartPage = () => {
   };
 
   return (
-    <Layout title={"About Us - TimelessWatches"}>
+    <Layout title={"About Us - Omnitrix"}>
       <div className="container">
         <div className="row">
           <div className="col-md-12">

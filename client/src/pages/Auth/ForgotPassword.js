@@ -33,7 +33,7 @@ const ForgotPasssword = () => {
     }
   };
   return (
-    <Layout title={"Forgot Password - TimelessWatches"}>
+    <Layout title={"Forgot Password - Omnitrix"}>
       <div className="form-container ">
         <form onSubmit={handleSubmit}>
           <h4 className="title">RESET PASSWORD</h4>

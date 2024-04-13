@@ -110,7 +110,7 @@ const Category = () => {
   };
 
   return (
-    <Layout title={"Categories - TimelessWatches"}>
+    <Layout title={"Categories - Omnitrix"}>
       <div className="row">
         <div className="col-md-3">
           <h6 className="text-center mt-2">Filter By Category</h6>

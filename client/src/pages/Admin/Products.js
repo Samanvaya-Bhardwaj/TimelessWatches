@@ -25,7 +25,7 @@ const Products = () => {
   }, []);
 
   return (
-    <Layout>
+    <Layout title = {"Omnitrix"}>
       <div className="row">
         <div className="col-md-3">
           <AdminMenu />

@@ -39,7 +39,7 @@ const ProductDetails = () => {
     }
   };
   return (
-    <Layout title={"product details - TimelessWatches"}>
+    <Layout title={"product details - Omnitrix"}>
       <div className="row container mt-2">
         <div className="col-md-6 mt-5">
           <img

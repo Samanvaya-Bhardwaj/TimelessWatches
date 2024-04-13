@@ -72,7 +72,7 @@ const HomePage = () => {
 
 
   return (
-    <Layout title={"Home - TimelessWatches"}>
+    <Layout title={"Home - Omnitrix"}>
       <div
         id="carouselExampleAutoplaying"
         className="carousel slide"

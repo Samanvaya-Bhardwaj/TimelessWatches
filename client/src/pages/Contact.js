@@ -4,7 +4,7 @@ import { BiMailSend, BiPhoneCall, BiSupport } from 'react-icons/bi';
 
 const Contact = () => {
   return (
-    <Layout title={"Contact Us - TimelessWatches"}>
+    <Layout title={"Contact Us - Omnitrix"}>
       <div className="row contactus">
         <div className="col-md-6">
           <img
@@ -21,7 +21,7 @@ const Contact = () => {
           </p>
           <p className="mt-3">
             <BiMailSend /> :{" "}
-            <a href="mailto:help@ecommerceapp.com">timelesswatches@gmail.com</a>
+            <a href="mailto:help@ecommerceapp.com">omnitrix@gmail.com</a>
           </p>
           <p className="mt-3">
             <BiPhoneCall /> : <a href="tel:0123456789">0-9999999999</a>

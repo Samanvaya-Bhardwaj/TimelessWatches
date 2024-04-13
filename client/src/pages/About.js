@@ -3,7 +3,7 @@ import Layout from "./../components/Layout/Layout";
 
 const About = () => {
   return (
-    <Layout title={"About Us - TimelessWatches"}>
+    <Layout title={"About Us - Omnitrix"}>
       <div className="row contactus ">
         <div className="col-md-6 ">
           <img src="/images/about.png" alt="about" style={{ width: "75%" }} />

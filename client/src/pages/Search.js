@@ -6,7 +6,7 @@ const Search = () => {
   const [values, setValues] = useSearch();
   const navigate = useNavigate();
     return (
-    <Layout title={"Search results"}>
+    <Layout title={"Search results - Omnitrix"}>
       <div className="container">
         <div className="text-center">
           <h1>Search Resuts</h1>

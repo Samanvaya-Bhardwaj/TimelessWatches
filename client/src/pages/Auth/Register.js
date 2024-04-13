@@ -39,7 +39,7 @@ const Register = () => {
 
   return (
     
-    <Layout  title="Register TimelessWatches" >
+    <Layout  title="Register - Omnitrix" >
     <div className="reg">
       <div className="register">
         <form onSubmit={handleSubmit}>
